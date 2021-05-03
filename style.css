@@ -1,0 +1,14 @@
+@media screen and (min-width:320px) {
+    body {
+        margin: 0;
+    }
+    header img {
+        width: 100px;
+        text-align: center;
+        display: flex;
+    }
+    #container {
+        width: 100%;
+        background-color: #EEEEEE;
+    }
+}

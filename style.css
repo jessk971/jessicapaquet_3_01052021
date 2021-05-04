@@ -6,6 +6,8 @@
         width: 100px;
         text-align: center;
         display: flex;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     #container {
         width: 100%;

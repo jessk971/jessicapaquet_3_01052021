@@ -13,4 +13,8 @@
         width: 100%;
         background-color: #EEEEEE;
     }
+    .map {
+        border: solid transparent;
+        background-color: #E5E5E5;
+    }
 }

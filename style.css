@@ -17,4 +17,15 @@
         border: solid transparent;
         background-color: #E5E5E5;
     }
+    header h3 {
+        font-size: 14px;
+    }
+    #menu a {
+        display: flex;
+        flex-direction: column;
+    }
+    #restaurant img {
+        width: 250px;
+        height: 200px;
+    }
 }

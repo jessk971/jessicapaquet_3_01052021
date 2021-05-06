@@ -20,7 +20,7 @@
     header h3 {
         font-size: 14px;
     }
-    #menu a {
+    #navbar a {
         display: flex;
         flex-direction: column;
     }

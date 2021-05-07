@@ -1,31 +1,42 @@
-@media screen and (min-width:320px) {
-    body {
-        margin: 0;
-    }
-    header img {
-        width: 100px;
-        text-align: center;
-        display: flex;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-    #container {
-        width: 100%;
-        background-color: #EEEEEE;
-    }
-    .map {
-        border: solid transparent;
-        background-color: #E5E5E5;
-    }
-    header h3 {
-        font-size: 14px;
-    }
-    #navbar a {
-        display: flex;
-        flex-direction: column;
-    }
-    #restaurant img {
-        width: 250px;
-        height: 200px;
-    }
+.footer_logo img {
+    filter: contrast (180%);
+}
+
+body {
+    margin: 0;
+}
+
+header img {
+    width: 100px;
+    text-align: center;
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#container {
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+.map {
+    border: solid transparent;
+    background-color: #E5E5E5;
+}
+
+header h3 {
+    font-size: 14px;
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: column;
+}
+
+#restaurant img {
+    width: 250px;
+    height: 200px;
+}
+
+
 }

@@ -6,6 +6,23 @@
 footer ul {
     list-style-type: none;
     color: white;
+    margin: 0;
+    padding: 1em;
+    line-height: 1.5em;
+    padding-top: 0;
+}
+
+.footer_logo img {
+    margin: 1em;
+    width: 100px;
+}
+
+.fa-utensils {
+    padding-right: 1em;
+}
+
+.fa-handshake {
+    padding-right: 0.5em;
 }
 
 body {
@@ -40,9 +57,30 @@ header h3 {
 }
 
 #restaurant img {
-    width: 250px;
-    height: 200px;
+    width: 390px;
+    height: 190px;
+    border-radius: 20px 20px 0px 0px;
 }
 
+img {
+    object-fit: cover;
+}
 
+#restaurant {
+    width: 100%;
+    background-color: rgb(246, 246, 246)
+}
+
+.resto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+article.establishment {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px rgb(212, 211, 211);
+    margin-bottom: 1em;
 }

@@ -1,5 +1,11 @@
-.footer_logo img {
-    filter: contrast (180%);
+#end {
+    background-color: #383838;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    color: white;
 }
 
 body {

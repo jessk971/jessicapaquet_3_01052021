@@ -118,8 +118,8 @@ article.establishment p {
     margin-bottom: 1em;
     background-color: rgb(246, 246, 246);
     color: black;
-    width: 350px;
-    padding: 1em;
+    width: 320px;
+    padding: 1.5em;
     box-shadow: 1px 1px 8px rgb(212, 211, 211);
 }
 
@@ -133,6 +133,7 @@ article.establishment p {
     flex-direction: column;
     text-align: center;
     padding: 1em;
+    margin-left: 0.5em;
 }
 
 .navbar a.three {
@@ -149,4 +150,22 @@ div.number {
     width: 20px;
     color: white;
     padding: 0.1em;
+    position: absolute;
+    left: 0.7em;
+}
+
+.fa-mobile-alt {
+    padding-right: 1em;
+}
+
+.fa-list {
+    padding-right: 1em;
+}
+
+.fa-store {
+    padding-right: 1em;
+}
+
+.navbar h2 {
+    margin-left: 1em;
 }

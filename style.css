@@ -10,6 +10,11 @@ footer ul {
     padding: 1em;
     line-height: 1.5em;
     padding-top: 0;
+    text-decoration: underline transparent;
+}
+
+footer a {
+    color: white;
 }
 
 .footer_logo img {
@@ -61,6 +66,7 @@ header h3 {
     width: 390px;
     height: 190px;
     border-radius: 20px 20px 0px 0px;
+    position: relative;
 }
 
 img {
@@ -201,6 +207,23 @@ header p {
 div.new {
     position: absolute;
     top: 920px;
+    right: 2em;
+    border: solid transparent;
+    background-color: rgb(153, 226, 208);
+    color: green;
+}
+
+a {
+    text-decoration: underline transparent;
+}
+
+.fa-map-marker-alt {
+    padding-right: 1em;
+}
+
+div.new1 {
+    position: absolute;
+    top: 1190px;
     right: 2em;
     border: solid transparent;
     background-color: rgb(153, 226, 208);

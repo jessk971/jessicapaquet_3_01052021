@@ -55,7 +55,7 @@ header img {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
-    box-shadow: 1px 1px 1px 1px rgb(212, 211, 211);
+    box-shadow: 0em -0.2em 0.1em rgb(212, 211, 211);
 }
 
 header h3 {
@@ -228,4 +228,8 @@ div.new1 {
     border: solid transparent;
     background-color: rgb(153, 226, 208);
     color: green;
+}
+
+.far {
+    font-size: x-large;
 }

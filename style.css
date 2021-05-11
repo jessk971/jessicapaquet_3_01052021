@@ -113,6 +113,14 @@ article.establishment p {
 }
 
 .navbar a {
-    border: solid;
+    border: solid transparent;
     border-radius: 15px;
+    margin-bottom: 1em;
+    background-color: rgb(246, 246, 246);
+    color: black;
+    width: 350px;
+}
+
+.navbar_option {
+    text-align: center;
 }

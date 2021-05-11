@@ -15,6 +15,7 @@ footer ul {
 .footer_logo img {
     margin: 1em;
     width: 100px;
+    filter: invert(100%);
 }
 
 .fa-utensils {
@@ -202,8 +203,6 @@ div.new {
     top: 920px;
     right: 2em;
     border: solid transparent;
-    background-color: green;
-}
-
-
+    background-color: rgb(153, 226, 208);
+    color: green;
 }

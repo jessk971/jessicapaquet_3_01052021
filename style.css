@@ -142,3 +142,11 @@ article.establishment p {
 .navbar a {
     flex-direction: row;
 }
+
+div.number {
+    background-color: rgb(147, 86, 220);
+    border-radius: 50px;
+    width: 20px;
+    color: white;
+    padding: 0.1em;
+}

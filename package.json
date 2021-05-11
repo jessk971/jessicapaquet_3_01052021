@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+        "sass": "sass --watch ./sass/main.scss:./public/css/style.css -w --style compressed",
+        "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
 
     },
     "repository": {
@@ -17,4 +18,5 @@
         "url": "https://github.com/jessk971/jessicapaquet_3_01052021/issues"
     },
     "homepage": "https://github.com/jessk971/jessicapaquet_3_01052021#readme"
+
 }

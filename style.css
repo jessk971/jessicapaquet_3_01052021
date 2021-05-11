@@ -84,3 +84,35 @@ article.establishment {
     box-shadow: 1px 1px 12px rgb(212, 211, 211);
     margin-bottom: 1em;
 }
+
+article.establishment h3 {
+    margin: 0;
+    padding-left: 1em;
+    margin-top: 0.5em;
+}
+
+article.establishment p {
+    margin: 0;
+    padding-left: 1.2em;
+    margin-bottom: 1em;
+}
+
+#restaurant h2 {
+    margin: 1em;
+    padding-top: 2em;
+}
+
+.fa-heart {
+    float: right;
+    margin-right: 1em;
+    margin-top: -0.5em;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar a {
+    border: solid;
+    border-radius: 15px;
+}

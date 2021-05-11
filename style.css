@@ -233,3 +233,19 @@ div.new1 {
 div.heart {
     font-size: x-large;
 }
+
+div.heart:hover .fas {
+    opacity: 1;
+    transition: opacity 3s linear;
+}
+
+div.heart:hover .far {
+    display: none;
+}
+
+div.heart .fas {
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(238, 115, 218)), to(rgb(161, 91, 220)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

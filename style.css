@@ -196,3 +196,14 @@ header p {
     text-align: center;
     font-size: 20px;
 }
+
+div.new {
+    position: absolute;
+    top: 920px;
+    right: 2em;
+    border: solid transparent;
+    background-color: green;
+}
+
+
+}

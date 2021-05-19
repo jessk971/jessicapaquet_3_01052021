@@ -1,3 +1,5 @@
+/* css index */
+
 #end {
     background-color: #383838;
     width: 100%;
@@ -252,6 +254,15 @@ div.heart .fas {
     -webkit-text-fill-color: transparent;
 }
 
+@media(max-width:280px) {
+    div.new1 {
+        top: 1170px
+    }
+    div.new {
+        top: 950px
+    }
+}
+
 @media(min-width:320px) and (max-width:374px) {
     #restaurant img {
         width: 300px;
@@ -268,7 +279,7 @@ div.heart .fas {
     }
 }
 
-@media(max-width:320px) {
+@media(min-width:320px) {
     div.new1 {
         top: 1190px;
     }
@@ -612,4 +623,28 @@ div.heart .fas {
         left: 73em;
         top: 905px;
     }
+}
+
+
+/*css la palette du gout*/
+
+.fa-arrow-left {
+    margin-left: 1em;
+    position: absolute;
+    top: 1.4em;
+}
+
+.logo1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.palette img {
+    width: 100%;
+    margin: 0;
+}
+
+#carte {
+    background-color: rgb(246, 246, 246)
 }

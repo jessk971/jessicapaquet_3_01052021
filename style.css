@@ -744,3 +744,21 @@ div.check {
         top: 17em;
     }
 }
+
+@media(min-width:375px) {
+    .title-heart {
+        top: 17.5em;
+    }
+}
+
+@media(min-width:411px) {
+    .title-heart {
+        top: 19.3em;
+    }
+}
+
+@media(min-width:425px) {
+    .title-heart {
+        top: 20em;
+    }
+}

@@ -221,10 +221,6 @@ a {
     text-decoration: underline transparent;
 }
 
-.fa-map-marker-alt {
-    padding-right: 1em;
-}
-
 div.new1 {
     position: absolute;
     top: 1170px;
@@ -252,6 +248,14 @@ div.heart .fas {
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(238, 115, 218)), to(rgb(161, 91, 220)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+input {
+    border: transparent;
+    background-color: rgb(223, 223, 223);
+    font-size: small;
+    padding-left: 1em;
+    width: 90px;
 }
 
 @media(max-width:280px) {
@@ -726,5 +730,17 @@ div.check {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media(min-width:320px) {
+    .title-heart {
+        top: 15em;
+    }
+}
+
+@media(min-width:360px) {
+    .title-heart {
+        top: 17em;
     }
 }

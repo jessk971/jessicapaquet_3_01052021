@@ -37,13 +37,13 @@ body {
     margin: 0;
 }
 
-header img {
+div.logo {
     margin-top: 1em;
     margin-bottom: 1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    text-align: center;
 }
 
 #container {
@@ -65,11 +65,14 @@ header h3 {
     font-size: 14px;
 }
 
+.img_new {
+    position: relative;
+}
+
 #restaurant img {
     width: 250px;
     height: 130px;
     border-radius: 20px 20px 0px 0px;
-    position: relative;
 }
 
 img {
@@ -84,7 +87,7 @@ img {
 .resto {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding-bottom: 2em;
 }
 
@@ -132,7 +135,8 @@ article.establishment p {
     padding: 1.5em;
     box-shadow: 1px 1px 8px rgb(212, 211, 211);
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    margin-left: 1.5em;
 }
 
 .navbar_option {
@@ -141,11 +145,9 @@ article.establishment p {
 
 .navbar nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     text-align: center;
-    padding: 1em;
-    margin-left: 0.5em;
 }
 
 .navbar a.three {
@@ -159,7 +161,7 @@ div.number {
     color: white;
     padding: 0.1em;
     position: absolute;
-    left: 0.7em;
+    left: 1em;
 }
 
 .fa-mobile-alt {
@@ -210,8 +212,8 @@ header p {
 
 div.new {
     position: absolute;
-    top: 960px;
-    right: 1.5em;
+    top: 1em;
+    right: 1em;
     border: solid transparent;
     background-color: rgb(153, 226, 208);
     color: green;
@@ -223,8 +225,8 @@ a {
 
 div.new1 {
     position: absolute;
-    top: 1170px;
-    right: 1.5em;
+    top: 1em;
+    right: 1em;
     border: solid transparent;
     background-color: rgb(153, 226, 208);
     color: green;
@@ -253,18 +255,9 @@ div.heart .fas {
 input {
     border: transparent;
     background-color: rgb(223, 223, 223);
-    font-size: small;
+    font-size: x-large;
     padding-left: 1em;
-    width: 90px;
-}
-
-@media(max-width:280px) {
-    div.new1 {
-        top: 1170px
-    }
-    div.new {
-        top: 950px
-    }
+    width: 200px;
 }
 
 @media(min-width:320px) and (max-width:374px) {
@@ -272,23 +265,8 @@ input {
         width: 300px;
         height: 170px;
     }
-    div.new1 {
-        top: 1220px
-    }
-    div.new {
-        top: 950px
-    }
     .navbar a {
         width: 230px;
-    }
-}
-
-@media(min-width:320px) {
-    div.new1 {
-        top: 1190px;
-    }
-    div.new {
-        top: 935px;
     }
 }
 
@@ -300,14 +278,6 @@ input {
     .navbar a {
         width: 270px;
     }
-    div.new {
-        right: 2em;
-        top: 960px;
-    }
-    div.new1 {
-        right: 2em;
-        top: 1240px
-    }
 }
 
 @media(min-width:360px) {
@@ -316,24 +286,6 @@ input {
     }
     .navbar a {
         width: 260px;
-    }
-    div.new {
-        top: 940px;
-    }
-    div.new1 {
-        top: 1195px;
-    }
-}
-
-@media(min-width:375px) {
-    .navbar a {
-        width: 290px;
-    }
-    div.new {
-        top: 940px;
-    }
-    div.new1 {
-        top: 1205px;
     }
 }
 
@@ -351,15 +303,8 @@ input {
         width: 390px;
         height: 190px;
     }
-    div.new1 {
-        top: 1215px;
-        right: 2em;
-    }
     .navbar a {
         width: 340px;
-    }
-    div.new {
-        right: 2em;
     }
 }
 
@@ -371,25 +316,11 @@ input {
     .navbar a {
         width: 450px;
     }
-    div.new {
-        top: 900px;
-        right: 2.5em;
-    }
-    div.new1 {
-        right: 2.5em;
-        top: 1210px;
-    }
 }
 
 @media(min-width:568px) {
     .navbar a {
         width: 480px;
-    }
-    div.new {
-        right: 3em;
-    }
-    div.new1 {
-        right: 3em;
     }
 }
 
@@ -397,14 +328,6 @@ input {
     #restaurant img {
         width: 268px;
         height: 160px;
-    }
-    div.new {
-        top: 920px;
-        right: initial;
-        left: 13em;
-    }
-    div.new1 {
-        top: 920px;
     }
 }
 
@@ -415,27 +338,11 @@ input {
     .navbar a {
         width: 550px;
     }
-    div.new {
-        top: 905px;
-        left: 14em;
-    }
-    div.new1 {
-        top: 905px;
-        right: 2.3em;
-    }
 }
 
 @media(min-width:653px) {
     .resto {
         justify-content: space-around;
-    }
-    div.new {
-        top: 910px;
-        left: 14em;
-    }
-    div.new1 {
-        top: 910px;
-        right: 2.5em;
     }
     .navbar a {
         width: 560px;
@@ -445,12 +352,6 @@ input {
 @media(min-width:720px) {
     .navbar a {
         width: 630px;
-    }
-    div.new1 {
-        right: 3.5em;
-    }
-    div.new {
-        left: 15em;
     }
 }
 
@@ -463,14 +364,6 @@ input {
 @media(min-width:768px) {
     .navbar a {
         width: 670px;
-    }
-    div.new {
-        top: 920px;
-        left: 13em;
-    }
-    div.new1 {
-        top: 920px;
-        right: 2em;
     }
     .resto {
         justify-content: space-between;
@@ -485,7 +378,6 @@ input {
         margin-left: 0;
     }
     .navbar a {
-        margin-left: 1em;
         width: 186px;
     }
     div.number {
@@ -494,14 +386,6 @@ input {
     }
     .resto {
         justify-content: space-around;
-    }
-    div.new {
-        left: initial;
-        top: 760px;
-        right: 26em;
-    }
-    div.new1 {
-        top: 760px;
     }
     footer ul {
         display: flex;
@@ -523,157 +407,90 @@ input {
     .navbar nav {
         margin-right: 1em;
     }
-    .navbar a {
-        margin-left: 2em;
-    }
-    div.new {
-        right: 28em;
-    }
-    div.new1 {
-        right: 3em;
-    }
-    .resto {
-        margin: 0;
-    }
 }
 
-@media(min-width:823px) {
-    div.new {
-        right: 29em;
-        top: 750px
-    }
-    div.new1 {
-        top: 750px
-    }
-    .navbar nav {
-        margin-right: 1em;
-    }
-    .navbar a {
-        margin-left: 2em;
-    }
+@media(min-width:823px) {}
+
+.navbar nav {
+    margin-right: 1em;
 }
 
+.navbar a {
+    margin-left: 2em;
+}
+
+
+}
 @media(min-width:1024px) {
     .navbar nav {
         justify-content: space-between;
         padding-left: 0;
         padding-right: 0;
     }
+    
     #restaurant img {
         width: 240px;
         height: 130px;
     }
+    
     .fa-heart {
         margin-right: 0.5em;
     }
-    div.new {
-        right: 49.5em;
-        top: 770px;
-    }
-    div.new1 {
-        right: 33.5em;
-        top: 770px;
-    }
 }
-
 @media(min-width:1366px) {
     .resto {
         justify-content: space-between;
         margin-left: 1em;
         margin-right: 1em;
     }
-    div.new {
-        right: initial;
-        left: 15em;
-        top: 790px;
-    }
-    div.new1 {
-        right: initial;
-        left: 36.5em;
-        top: 790px;
-    }
+    
     #restaurant img {
         width: 300px;
         height: 150px;
     }
+    
     .navbar a {
         width: 350px;
     }
 }
-
-@media(min-width:1440px) {
-    div.new {
-        top: 800px;
-    }
-    div.new1 {
-        left: 38em;
-        top: 800px;
-    }
-}
-
 @media(min-width:2560px) {
-    div.new {
-        top: 905px;
-        left: 33em;
-    }
     #restaurant img {
         width: 600px;
         height: 350px;
     }
+    
     .navbar a {
         width: 550px;
     }
-    div.new1 {
-        left: 73em;
-        top: 905px;
-    }
 }
 
-
 /*css la palette du gout , la note enchantée, a la francaise, le délice des sens*/
-
 .fa-arrow-left {
     margin-left: 1em;
     position: absolute;
     top: 1.4em;
 }
-
 .logo1 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-
-.title img {
-    width: 100%;
-    margin: 0;
-    position: relative;
+.logo1 i {
+    left: 0;
 }
-
 #carte {
     background-color: rgb(246, 246, 246);
     padding-bottom: 1em;
-    margin-top: 2em;
-}
-
-.title-heart {
-    position: absolute;
-    width: 100%;
-    background-color: rgb(246, 246, 246);
-    top: 13em;
-    border: transparent;
+    margin-top: -5em;
+    position: relative;
     border-radius: 30px 30px 0px 0px;
 }
-
-.title i {
-    float: right;
-    margin-top: -2em;
-}
-
 #carte button {
     width: 200px;
 }
-
 #carte h2 {
     border-bottom: solid;
     border-bottom-width: medium;
@@ -682,7 +499,6 @@ input {
     margin-left: 0.5em;
     margin-top: 1.5em;
 }
-
 .plate {
     border: solid transparent;
     background-color: white;
@@ -697,68 +513,43 @@ input {
     transition: all 0.3s linear 0s;
     animation-fill-mode: forwards;
 }
-
 #carte h3 {
     margin-bottom: 0;
     margin-top: 0.5em;
 }
-
 #carte p {
     margin-top: 0;
     margin-bottom: 0.5em;
 }
-
 .title h2 {
     margin-left: 0.5em;
     margin-bottom: 1em;
 }
-
 strong {
     right: 1em;
     position: absolute;
 }
-
 div.check {
     float: right;
     position: relative;
     color: white;
 }
-
+.background img {
+    width: 100%;
+}
 @keyframes move {
     0% {
         opacity: 0;
     }
+    
     100% {
         opacity: 1;
     }
 }
-
-@media(min-width:320px) {
-    .title-heart {
-        top: 15em;
-    }
+.title-heart h1 {
+    padding-top: 1em;
+    margin-left: 0.5em;
 }
-
-@media(min-width:360px) {
-    .title-heart {
-        top: 17em;
-    }
-}
-
-@media(min-width:375px) {
-    .title-heart {
-        top: 17.5em;
-    }
-}
-
-@media(min-width:411px) {
-    .title-heart {
-        top: 19.3em;
-    }
-}
-
-@media(min-width:425px) {
-    .title-heart {
-        top: 20em;
-    }
+.title-heart i {
+    margin-top: -1.8em;
 }

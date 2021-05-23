@@ -238,7 +238,7 @@ div.heart {
 
 div.heart:hover .fas {
     opacity: 1;
-    transition: opacity 3s linear;
+    transition: opacity 0.5s linear;
 }
 
 div.heart:hover .far {
@@ -509,7 +509,6 @@ input {
     padding-left: 0.5em;
     position: relative;
     animation: move 1s;
-    animation-fill-mode: backwards;
     animation-timing-function: ease;
     transition: all 0.5s ease;
 }
@@ -569,6 +568,10 @@ div.check {
         opacity: 1;
     }
     
+    50% {
+        opacity: 0.5;
+    }
+    
     100% {
         opacity: 0;
     }
@@ -576,7 +579,25 @@ div.check {
 .title-heart h1 {
     padding-top: 1em;
     margin-left: 0.5em;
+    font-family: shrikhand;
 }
 .title-heart i {
     margin-top: -1.8em;
+}
+@media(min-width:900px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+@media(min-width:1366px) {
+    .plate {
+        font-size: x-large;
+    }
+}
+@media(min-width:2560px) {
+    .plate {
+        font-size: xx-large;
+    }
 }

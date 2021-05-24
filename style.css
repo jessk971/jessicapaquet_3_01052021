@@ -1,5 +1,9 @@
 /* css index */
 
+p h2 h3 {
+    font-family: roboto;
+}
+
 #end {
     background-color: #383838;
     width: 100%;
@@ -498,6 +502,7 @@ input {
     border-color: rgb(153, 226, 208);
     margin-left: 0.5em;
     margin-top: 1.5em;
+    font-weight: lighter;
 }
 .plate {
     border: solid transparent;

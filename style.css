@@ -584,7 +584,6 @@ div.check {
     color: white;
     width: 0;
     transition: all 0.3s linear 0s;
-    visibility: hidden;
 }
 
 .background img {
@@ -624,7 +623,6 @@ div.check {
     border: solid transparent;
     padding-top: 0.5em;
     border-radius: 0px 15px 15px 0px;
-    visibility: visible;
 }
 
 .fa-check-circle:hover {

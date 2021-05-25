@@ -467,9 +467,10 @@ input {
 /*css la palette du gout , la note enchantée, a la francaise, le délice des sens*/
 
 .fa-arrow-left {
-    margin-left: 1em;
+    margin-left: 0.5em;
     position: absolute;
-    top: 1.4em;
+    top: 1.3em;
+    font-size: larger;
 }
 
 .logo1 {
@@ -610,6 +611,34 @@ div.check {
     margin-top: -1.8em;
 }
 
+.plate:hover {}
+
+.check:hover {
+    background-color: rgb(153, 226, 208);
+    animation: movecheck 2s;
+    width: 30%;
+    height: 60px;
+    text-align: center;
+    font-size: xx-large;
+    border: solid transparent;
+    padding-top: 1em;
+    border-radius: 0px 15px 15px 0px;
+}
+
+@keyframes movecheck {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 30%;
+    }
+}
+
+.fa-check-circle:hover {
+    transform: rotate(360deg) scale(1.15);
+    animation-duration: 1s;
+}
+
 @media(min-width:320px) {
     .title-heart h1 {
         font-size: x-large;
@@ -633,14 +662,57 @@ div.check {
     }
 }
 
+@media(min-width:1024px) {
+    .title-heart {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    .plate {
+        width: 305px;
+    }
+}
+
 @media(min-width:1366px) {
     .plate {
         font-size: x-large;
+        width: 420px;
+    }
+    #carte h2 {
+        font-size: xx-large;
+    }
+    #carte button {
+        font-size: x-large;
+        width: 300px;
+        height: 80px;
     }
 }
 
 @media(min-width:2560px) {
     .plate {
         font-size: xx-large;
+        width: 700px;
+    }
+    .title-heart h1 {
+        font-size: xxx-large;
+    }
+    .title-heart i {
+        font-size: xxx-large;
+        margin-left: 1em;
+    }
+    .title-heart {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    #carte button {
+        width: 350px;
+        height: 100px;
+        font-size: xx-large;
+    }
+    .fa-arrow-left {
+        font-size: xxx-large;
+        top: 0.5em;
+    }
+    .logo1 img {
+        width: 400px;
     }
 }

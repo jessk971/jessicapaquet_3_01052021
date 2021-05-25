@@ -582,6 +582,9 @@ div.check {
     float: right;
     position: relative;
     color: white;
+    width: 0;
+    transition: all 0.3s linear 0s;
+    visibility: hidden;
 }
 
 .background img {
@@ -611,18 +614,30 @@ div.check {
     margin-top: -1.8em;
 }
 
-.plate:hover {}
-
 .check:hover {
     background-color: rgb(153, 226, 208);
+    background-position: right;
     animation: movecheck 2s;
     width: 30%;
-    height: 60px;
     text-align: center;
     font-size: xx-large;
     border: solid transparent;
-    padding-top: 1em;
+    padding-top: 0.5em;
     border-radius: 0px 15px 15px 0px;
+    visibility: visible;
+}
+
+.fa-check-circle:hover {
+    animation: check 2s;
+}
+
+@keyframes check {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes movecheck {

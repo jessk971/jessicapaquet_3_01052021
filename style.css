@@ -1,44 +1,53 @@
     /* css index */
     
     .loading {
-        width: 100%;
         height: 100%;
-        background: #000;
+        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
-        opacity: 0.5;
-        position: absolute;
-        animation-duration: 1s;
+        position: fixed;
     }
     
-    .loader::after {
-        visibility: hidden;
+    .loader {
+        position: relative;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border: 16px solid #bdc3c7;
+        width: 120px;
+        height: 120px;
+        border-top-color: #1abc9c;
+        border-bottom-color: #3498db;
+        border-radius: 50%;
+        animation: chargeur 4s linear;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
     }
     
     @keyframes chargeur {
         0% {
             transform: rotate(0deg) scale(1);
-            border-top-color: red;
-            border-bottom-color: red;
+            border-top-color: #9356DC;
+            border-bottom-color: #9356DC;
         }
         25% {
-            border-top-color: blue;
-            border-bottom-color: blue;
+            border-top-color: #FF79DA;
+            border-bottom-color: #FF79DA;
         }
         50% {
             transform: rotate(360deg) scale(1.15);
-            border-top-color: red;
-            border-bottom-color: red;
+            border-top-color: #99E2D0;
+            border-bottom-color: #99E2D0;
         }
         75% {
-            border-top-color: green;
-            border-bottom-color: green;
+            border-top-color: #9356DC;
+            border-bottom-color: #9356DC;
         }
         100% {
             transform: rotate(720deg) scale(1);
-            border-top-color: red;
-            border-bottom-color: red;
+            border-top-color: #FF79DA;
+            border-bottom-color: #FF79DA;
+            visibility: hidden
         }
     }
     
@@ -285,6 +294,7 @@
     div.heart:hover .fas {
         opacity: 1;
         transition: opacity 0.5s linear;
+        cursor: pointer;
     }
     
     div.heart:hover .far {
@@ -522,6 +532,14 @@
         margin-bottom: 1em;
     }
     
+    strong {
+        float: right;
+        margin-right: 1em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
     .logo1 i {
         left: 0;
     }
@@ -618,17 +636,13 @@
         margin-bottom: 1em;
     }
     
-    strong {
-        right: 1em;
-        position: absolute;
-    }
-    
     div.check {
         float: right;
         position: relative;
         color: white;
         width: 0;
         right: 0em;
+        font-size: x-small;
         visibility: hidden;
     }
     
@@ -658,17 +672,24 @@
     
     .plate:hover>.check {
         background-color: rgb(153, 226, 208);
-        background-position: right;
+        border: solid 4px rgb(153, 226, 208);
         animation: movecheck 2s;
-        width: 30%;
+        height: 100%;
+        width: 80px;
+        margin-top: -0.1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.2em;
+        margin-right: -0.2em;
         text-align: center;
         font-size: xx-large;
         border: solid transparent;
-        padding-top: 0.5em;
+        vertical-align: baseline;
         border-radius: 0px 15px 15px 0px;
         visibility: visible;
         text-overflow: ellipsis;
         overflow: hidden;
+        position: relative;
+        cursor: pointer;
     }
     
     .check:hover>.plate {
@@ -690,27 +711,13 @@
             width: 0px;
         }
         to {
-            width: 30%;
+            width: 80px;
         }
     }
     
     .fa-check-circle:hover {
         transform: rotate(360deg) scale(1.15);
         animation-duration: 1s;
-    }
-    
-    .loader {
-        margin: auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        border: 16px solid #bdc3c7;
-        width: 120px;
-        height: 120px;
-        border-top-color: #1abc9c;
-        border-bottom-color: #3498db;
-        border-radius: 50%;
-        animation: chargeur 1s linear;
-        animation-iteration-count: 1;
     }
     
     @media(min-width:320px) {
@@ -749,7 +756,7 @@
     @media(min-width:1366px) {
         .plate {
             font-size: x-large;
-            width: 420px;
+            width: 410px;
         }
         #carte h2 {
             font-size: xx-large;
@@ -758,6 +765,10 @@
             font-size: x-large;
             width: 300px;
             height: 80px;
+        }
+        .plate:hover>.check {
+            height: 53px;
+            padding-top: 0.9em;
         }
     }
     
@@ -788,5 +799,9 @@
         }
         .logo1 img {
             width: 400px;
+        }
+        .plate:hover>.check {
+            height: 70px;
+            padding-top: 1.2em;
         }
     }

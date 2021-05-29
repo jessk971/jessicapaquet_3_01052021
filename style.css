@@ -244,6 +244,9 @@
         background: linear-gradient(to bottom right, rgb(238, 115, 218), rgb(161, 91, 220));
         border-color: transparent;
         width: 250px;
+        -webkit-box-shadow: 1px 2px 9px grey;
+        cursor: pointer;
+        position: relative;
     }
     
     .btn {
@@ -254,6 +257,19 @@
     button:hover {
         opacity: 0.6;
         transition-duration: 0.5s;
+        animation: box ease 2s;
+    }
+    
+    @keyframes box {
+        0% {
+            -webkit-box-shadow: 1px 2px 9px grey;
+        }
+        50% {
+            -webkit-box-shadow: 5px 10px 8px #888888;
+        }
+        100% {
+            -webkit-box-shadow: 1px 2px 9px grey;
+        }
     }
     
     header h1 {
@@ -576,7 +592,7 @@
         padding-left: 0.5em;
         position: relative;
         animation: move 5s;
-        animation-timing-function: ease;
+        animation-timing-function: ease-in-out;
     }
     
     .plate:nth-child(1) {
@@ -584,35 +600,35 @@
     }
     
     .plate:nth-child(2) {
-        animation-delay: 0.2s;
-    }
-    
-    .plate:nth-child(3) {
         animation-delay: 0.3s;
     }
     
-    .plate:nth-child(4) {
-        animation-delay: 0.4s;
-    }
-    
-    .plate:nth-child(5) {
+    .plate:nth-child(3) {
         animation-delay: 0.5s;
     }
     
-    .plate:nth-child(6) {
-        animation-delay: 0.6s;
-    }
-    
-    .plate:nth-child(7) {
+    .plate:nth-child(4) {
         animation-delay: 0.7s;
     }
     
+    .plate:nth-child(5) {
+        animation-delay: 0.9s;
+    }
+    
+    .plate:nth-child(6) {
+        animation-delay: 1.1s;
+    }
+    
+    .plate:nth-child(7) {
+        animation-delay: 1.3s;
+    }
+    
     .plate:nth-child(8) {
-        animation-delay: 0.8s;
+        animation-delay: 1.5s;
     }
     
     .plate:nth-child(9) {
-        animation-delay: 0.9s;
+        animation-delay: 1.7s;
     }
     
     #carte h3 {

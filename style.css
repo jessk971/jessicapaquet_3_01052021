@@ -708,11 +708,6 @@
         cursor: pointer;
     }
     
-    .check:hover>.plate {
-        animation: check 2s;
-        transition: all 0.3s linear 0s;
-    }
-    
     @keyframes check {
         0% {
             transform: rotate(0);
@@ -731,9 +726,9 @@
         }
     }
     
-    .fa-check-circle:hover {
-        transform: rotate(360deg) scale(1.15);
-        animation-duration: 1s;
+    .plate:hover>.fa-check-circle {
+        animation: check 1s;
+        transition: ease;
     }
     
     @media(min-width:320px) {

@@ -548,14 +548,6 @@
         margin-bottom: 1em;
     }
     
-    strong {
-        float: right;
-        margin-right: 1em;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-    
     .logo1 i {
         left: 0;
     }
@@ -593,6 +585,15 @@
         position: relative;
         animation: move 5s;
         animation-timing-function: ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .plate_menu {
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     
     .plate:nth-child(1) {

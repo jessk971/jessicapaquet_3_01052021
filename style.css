@@ -5,7 +5,9 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        position: fixed;
+        position: absolute;
+        vertical-align: baseline;
+        margin-top: 250px;
     }
     
     .loader {

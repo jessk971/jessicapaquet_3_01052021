@@ -231,6 +231,21 @@
         margin-left: 1em;
     }
     
+    a.button {
+        border-radius: 50px;
+        margin-bottom: 3em;
+        margin-top: 2em;
+        height: 50px;
+        color: white;
+        background: linear-gradient(to bottom right, #ff79da, #9356dc);
+        border-color: transparent;
+        width: 250px;
+        -webkit-box-shadow: 1px 2px 9px grey;
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+    }
+    
     button {
         border-radius: 50px;
         margin-bottom: 3em;
@@ -245,9 +260,20 @@
         position: relative;
     }
     
+    .btn a {
+        display: flex;
+        justify-content: center;
+    }
+    
     .btn {
         display: flex;
         justify-content: center;
+    }
+    
+    a.button:hover {
+        opacity: 0.6;
+        transition-duration: 0.5s;
+        animation: box ease 2s;
     }
     
     button:hover {

@@ -51,10 +51,6 @@
         }
     }
     
-    p h2 h3 {
-        font-family: roboto;
-    }
-    
     #end {
         background-color: #383838;
         width: 100%;
@@ -210,7 +206,7 @@
     }
     
     div.number {
-        background-color: rgb(147, 86, 220);
+        background-color: #9356dc;
         border-radius: 50px;
         width: 20px;
         color: white;
@@ -241,7 +237,7 @@
         margin-top: 2em;
         height: 50px;
         color: white;
-        background: linear-gradient(to bottom right, rgb(238, 115, 218), rgb(161, 91, 220));
+        background: linear-gradient(to bottom right, #ff79da, #9356dc);
         border-color: transparent;
         width: 250px;
         -webkit-box-shadow: 1px 2px 9px grey;
@@ -260,15 +256,27 @@
         animation: box ease 2s;
     }
     
-    @keyframes box {
+    @-webkit-keyframes box {
         0% {
-            -webkit-box-shadow: 1px 2px 9px grey;
+            box-shadow: 1px 2px 9px grey;
         }
         50% {
-            -webkit-box-shadow: 5px 10px 8px #888888;
+            box-shadow: 5px 10px 8px #888888;
         }
         100% {
-            -webkit-box-shadow: 1px 2px 9px grey;
+            box-shadow: 1px 2px 9px grey;
+        }
+    }
+    
+    @-moz-keyframes box {
+        0% {
+            box-shadow: 1px 2px 9px grey;
+        }
+        50% {
+            box-shadow: 5px 10px 8px #888888;
+        }
+        100% {
+            box-shadow: 1px 2px 9px grey;
         }
     }
     
@@ -286,7 +294,7 @@
         top: 1em;
         right: 1em;
         border: solid transparent;
-        background-color: rgb(153, 226, 208);
+        background-color: #99E2D0;
         color: green;
     }
     
@@ -299,7 +307,7 @@
         top: 1em;
         right: 1em;
         border: solid transparent;
-        background-color: rgb(153, 226, 208);
+        background-color: #99E2D0;
         color: green;
     }
     
@@ -319,9 +327,12 @@
     
     div.heart .fas {
         opacity: 0;
-        background: -webkit-gradient(linear, left top, left bottom, from(rgb(238, 115, 218)), to(rgb(161, 91, 220)));
+        background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+        background: -moz-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
     }
     
     input {
@@ -669,8 +680,8 @@
     }
     
     .plate:hover>.check {
-        background-color: rgb(153, 226, 208);
-        border: solid 4px rgb(153, 226, 208);
+        background-color: #99E2D0;
+        border: solid 4px #99E2D0;
         animation: movecheck 0.5s;
         height: 100%;
         width: 80px;

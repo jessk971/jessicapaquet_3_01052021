@@ -1,29 +1,57 @@
     /* css index */
     
+    body {
+        font-family: Roboto;
+    }
+    
     .loading {
         height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
-        position: absolute;
-        vertical-align: baseline;
-        margin-top: 250px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+        animation: loader 2s linear;
+        animation-fill-mode: both;
     }
     
     .loader {
         position: relative;
         margin: auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 43vh;
         border: 16px solid #bdc3c7;
         width: 120px;
         height: 120px;
         border-top-color: #1abc9c;
         border-bottom-color: #3498db;
         border-radius: 50%;
-        animation: chargeur 4s linear;
+        animation: chargeur 2s linear infinite;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+        z-index: 1;
+    }
+    
+    @-webkit-keyframes loader {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            visibility: hidden;
+        }
+    }
+    
+    @-moz-keyframes loader {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            visibility: hidden;
+        }
     }
     
     @keyframes chargeur {
@@ -149,6 +177,10 @@
         border-radius: 20px;
         box-shadow: 1px 1px 12px rgb(212, 211, 211);
         margin-bottom: 1em;
+    }
+    
+    article.establishment a {
+        cursor: pointer;
     }
     
     article.establishment h3 {
@@ -676,24 +708,7 @@
     
     .background img {
         width: 100%;
-    }
-    
-    @-moz-keyframes move {
-        0% {
-            transform: scale(0.1);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
-    
-    @-webkit-keyframes move {
-        0% {
-            transform: scale(0.1);
-        }
-        100% {
-            transform: scale(1);
-        }
+        max-height: 40vh;
     }
     
     .title-heart h1 {
@@ -707,17 +722,15 @@
         margin-top: -1.8em;
     }
     
+    .plate:hover .fa-check-circle {
+        animation: check 0.5s;
+    }
+    
     .plate:hover>.check {
         background-color: #99E2D0;
-        border: solid 4px #99E2D0;
         animation: movecheck 0.5s;
         height: 100%;
         width: 80px;
-        margin-top: -0.1em;
-        padding-top: 0.5em;
-        padding-bottom: 0.2em;
-        margin-right: -0.2em;
-        margin-bottom: -0.1em;
         text-align: center;
         font-size: xx-large;
         border: solid transparent;
@@ -729,14 +742,17 @@
         position: relative;
         cursor: pointer;
         animation-fill-mode: forwards;
-        transform: rotate(0);
     }
     
     .check {
         position: relative;
         color: white;
         visibility: hidden;
-        transform: rotate(360deg);
+        margin-top: -0.4em;
+        padding-top: 0.35em;
+        padding-bottom: 0.3em;
+        margin-right: -0.2em;
+        margin-bottom: -0.4em;
     }
     
     @-moz-keyframes move {

@@ -572,15 +572,14 @@
         }
     }
     
-    @media(min-width:823px) {}
-    
-    .navbar nav {
-        margin-right: 1em;
-    }
-    
-    .navbar a {
-        margin-left: 2em;
-        width: 740px;
+    @media(min-width:823px) {
+        .navbar nav {
+            margin-right: 1em;
+        }
+        .navbar a {
+            margin-left: 2em;
+            width: 740px;
+        }
     }
     
     @media(min-width:901px) {

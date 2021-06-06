@@ -58,7 +58,34 @@
         }
     }
     
-    @keyframes chargeur {
+    @-webkit-keyframes chargeur {
+        0% {
+            transform: rotate(0deg) scale(1);
+            border-top-color: #9356DC;
+            border-bottom-color: #9356DC;
+        }
+        25% {
+            border-top-color: #FF79DA;
+            border-bottom-color: #FF79DA;
+        }
+        50% {
+            transform: rotate(360deg) scale(1.15);
+            border-top-color: #99E2D0;
+            border-bottom-color: #99E2D0;
+        }
+        75% {
+            border-top-color: #9356DC;
+            border-bottom-color: #9356DC;
+        }
+        100% {
+            transform: rotate(720deg) scale(1);
+            border-top-color: #FF79DA;
+            border-bottom-color: #FF79DA;
+            visibility: hidden;
+        }
+    }
+    
+    @-moz-keyframes chargeur {
         0% {
             transform: rotate(0deg) scale(1);
             border-top-color: #9356DC;
@@ -142,7 +169,8 @@
         text-align: center;
         padding-top: 1em;
         padding-bottom: 1em;
-        box-shadow: 0em -0.2em 0.1em rgb(212, 211, 211);
+        -webkit-box-shadow: 0em -0.2em 0.1em rgb(212, 211, 211);
+        -moz-box-shadow: 0em -0.2em 0.1em rgb(212, 211, 211);
         font-size: large;
         padding-left: 2em;
     }
@@ -180,7 +208,8 @@
     article.establishment {
         background-color: white;
         border-radius: 20px;
-        box-shadow: 1px 1px 12px rgb(212, 211, 211);
+        -webkit-box-shadow: 1px 1px 12px rgb(212, 211, 211);
+        -moz-box-shadow: 1px 1px 12px rgb(212, 211, 211);
         margin-bottom: 1em;
     }
     
@@ -223,7 +252,8 @@
         color: black;
         width: 205px;
         padding: 1em;
-        box-shadow: 1px 1px 8px rgb(212, 211, 211);
+        -webkit-box-shadow: 1px 1px 8px rgb(212, 211, 211);
+        -moz-box-shadow: 1px 1px 8px rgb(212, 211, 211);
         display: flex;
         flex-direction: row;
         margin-left: 2em;
@@ -281,6 +311,7 @@
         border-color: transparent;
         width: 250px;
         -webkit-box-shadow: 1px 2px 9px grey;
+        -moz-box-shadow: 1px 2px 9px grey;
         cursor: pointer;
         position: relative;
         align-items: center;
@@ -296,6 +327,7 @@
         border-color: transparent;
         width: 250px;
         -webkit-box-shadow: 1px 2px 9px grey;
+        -moz-box-shadow: 1px 2px 9px grey;
         cursor: pointer;
         position: relative;
     }
